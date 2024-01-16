@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhdm0h1mp3788"]
+
+[ext_resource type="Texture2D" uid="uid://dnp5k6aed1s1v" path="res://Sprites/NanobotBase.png" id="1_22sju"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ggq4r"]
+radius = 13.0384
+
+[node name="Nanobot" type="Area2D"]
+position = Vector2(0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_22sju")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ggq4r")
